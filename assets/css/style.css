@@ -1,0 +1,440 @@
+body{
+	background: #404040 !important;
+	color: whitesmoke;
+	cursor: default;
+}
+.oculto{
+	display: none;
+}
+/******************************************/
+/* HEADER */
+/******************************************/
+.header{
+	width: 100%;
+	height: 7rem;
+	margin: auto;
+	background: rgb(78, 78, 78);
+	/* background: #262626 !important; */
+}
+.logo{
+	position: relative; 
+	/* left: 12px; */
+}
+.title-content{
+	justify-content: center;
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+.title{
+	color: whitesmoke;
+}
+.section-header h3::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+.section-header h3::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #fac014;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+.section-header > h3{
+    font-size: 32px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+.section-header h6::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+.section-header h6::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #fac014;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+.section-header > h6{
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    /* font-weight: 700; */
+    position: relative;
+    padding-bottom: 15px;
+}
+/******************************************/
+/* END HEADER */
+/******************************************/
+
+/******************************************/
+/* BARRA DE NAVEGACION */
+/******************************************/
+.barra-navegacion{
+	display: flex;
+}
+.barra-navegacion ul{
+	list-style: none;
+}
+/* ----MENU---- */
+.menu{
+	width: 70%;
+	padding: 0px;
+	border:none; 
+	/* border-bottom: 3px solid #2e6f83; */
+	border-bottom: 2px solid #bf9000;
+	background: #f4f4f4;
+	margin-bottom: 0px;
+}
+.img-item{
+	position: relative;
+	left: 10px;
+	border-radius: 100%;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	font-size: 12px;
+	color: #fcbf08;
+	display: inline-block;
+}
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+.menu li:hover{
+	background: #a3a2a2;
+}
+.menu > li > a{
+	padding: 10px 20px;
+	color: #404040;
+	display: block;
+}
+.menu li a:hover{
+	text-decoration: none;
+}
+/* ----OPCIONES DE USUARIO---- */
+.opciones{
+	width: 30%;
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: right;
+	color: #404040;
+	list-style: none;
+	border:none; 
+	border-bottom: 2px solid #bf9000;
+	/* border-bottom: 3px solid #2e6f83; */
+	padding: 0px 20px;
+	margin-bottom: 0px;
+	background: #f4f4f4;
+}
+.img-profile{
+	position: relative;
+	left: 10px;
+	/* background: #767171; */
+	background: rgb(221, 221, 221);
+	border-radius: 100%;
+	width: 25px;
+	text-align: center;
+	height: 25px;
+	border: none;
+	cursor: pointer;
+	font-size: 11px;
+	color: #fcbf08;
+}
+.img-profile:focus{
+	border: none;
+	outline: none;
+}
+.op{
+	list-style: none;
+	display: none;
+	position: absolute;
+	padding: 12px 12px;
+	right: 0%;
+	z-index: 999;
+}
+.op li{
+	width: 100%;
+	padding: 5px 0px;
+}
+.op li a {
+	text-decoration: none;
+	padding: 3px 14px;
+	background: whitesmoke;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	color: rgb(61, 61, 61);
+}
+.op li a:hover{
+	background: rgb(236, 236, 236);
+	border-bottom: 1px solid orange;
+}
+.op li a .f-sm{
+	font-size: 11px;
+	position: relative; 
+	right: 10px;
+}
+.linea{
+	position: relative; 
+	top: -25px; 
+	border:none; 
+	border-bottom: 1px solid #bf9000;
+}
+/******************************************/
+/* END BARRA DE NAVEGACION */
+/******************************************/
+
+/******************************************/
+/* CAROUSEL */
+/******************************************/
+.carrusel{
+	/* width: 100%; */
+	/* height: 15rem; */
+	background: #dadbde;
+	/* background-image: url('../img/carousel/carousel-1.png'); */
+	background-repeat: no-repeat;
+	background-position-x: center;
+	/* background-size: 100% 15rem; */
+}
+#carouselExampleControls{
+	/* width: 90%; */
+	margin: auto; 
+}
+/******************************************/
+/* END CAROUSEL */
+/******************************************/
+
+/******************************************/
+/* CONTENEDORES */
+/******************************************/
+.content{
+	min-height: 200px;
+	background: rgb(109, 109, 109);
+}
+/******************************************/
+/* END CONTENEDORES */
+/******************************************/
+
+/******************************************/
+/* LISTA OPCIONES */
+/******************************************/
+.btn-option{
+	min-width: 100px;
+	/* color: #fff; */
+	font-size: 11px;
+	background: #f4f4f4;
+}
+.btn-option:hover{
+	background: #dddcdc;
+}
+.option-ico{
+	font-size: 3.5rem; 
+	/* color: #abadb1; */
+	color: #4ca0f0;
+
+}
+/******************************************/
+/* END LISTA OPCIONES */
+/******************************************/
+
+/******************************************/
+/* MODAL LOGOUT */
+/******************************************/
+#logoutModal{
+	top: 25%;
+	color: black;
+}
+#logoutModal .modal-content{
+	border: 0px;
+	border-radius: 0px;
+}
+#logoutModal .modal-title{
+	font-family: Arial, Helvetica, sans-serif;
+}
+/******************************************/
+/* END MODAL LOGOUT */
+/******************************************/
+
+/******************************************/
+/* LOGIN */
+/******************************************/
+#cont-login{
+	width: 100%;
+	position: absolute;
+	z-index: 500;
+	margin-top: 15%;
+}
+#cont-1{
+	width: 100%;
+	justify-content: center;
+	display: flex;
+}
+.login{
+	width: 380px;
+	height: 350px;
+	background: #bfbfbf;
+	border-radius: 56px;
+}
+.figure{
+	/* width: 80%; */
+	min-height: 249px;
+	/* background: rgba(12, 12, 12, 0.863); */
+    background-image: url(../img/login.png);
+	background-color: #343a40;
+    background-position: center;
+    background-size: 350px;
+    background-repeat: no-repeat;
+	margin-bottom: 1% !important;
+}
+.close{
+	font-size: 18px;
+}
+/******************************************/
+/* END LOGIN */
+/******************************************/
+
+/******************************************/
+/* FORMULARIOS */
+/******************************************/
+.form-input:focus{
+	border: 0px;
+	box-shadow: none;
+}
+/******************************************/
+/* END FORMULARIOS */
+/******************************************/
+
+/******************************************/
+/* ICO FORMULARIOS */
+/******************************************/
+.ico-form{
+    padding: 10px 8px;
+    background-color: #5a6268;
+    color: #fff;
+}
+/******************************************/
+/* END ICO FORMULARIOS */
+/******************************************/
+
+/******************************************/
+/* GENERALES PARA ALGUNOS FORM */
+/******************************************/
+.account-settings .user-profile {
+    margin: 10px 0 1rem 0;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.account-settings .user-profile .user-avatar {
+    margin: 0;
+}
+.account-settings .user-profile .user-avatar img {
+    width: 250px;
+    height: 250px;
+	background: grey;
+	border: 0px solid grey !important;
+     -webkit-border-radius: 40px; 
+     -moz-border-radius: 40px; 
+     border-radius: 40px; 
+    object-fit: cover;
+}
+
+.account-settings .about {
+    margin: 2rem 0 0 0;
+    text-align: center;
+}
+.account-settings .about h5 {
+    margin: 0 0 15px 0;
+    color: #007ae1;
+}
+.account-settings .about p {
+    font-size: 0.825rem;
+}
+.custom-select{
+	background: #bbbbbb;
+	border-radius: 6px;
+	box-shadow: none;
+	padding-left: 0px;
+}
+.custom-input{
+	border: 0 none black;
+    border-bottom: 1px solid #bfc2c7;
+    background: none !important;
+    outline: none !important;
+	padding-left: 0px;
+	box-shadow: none !important;
+
+}
+.custom-input:focus{
+    background: none;
+    outline: none !important;
+	box-shadow: none !important;
+}
+
+#asistencia-content{
+    background-image: url(../img/administrativo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 350px;
+}
+.asistencia-content{
+    background-color: #00000062;
+}
+/******************************************/
+/* END GENERALES PARA ALGUNOS FORM */
+/******************************************/
+
+/******************************************/
+/* PAGINATE */
+/******************************************/
+.pagination > li > .page-link > a:hover{
+    text-decoration: none;
+}
+/*.page-link{
+    background: #6c757d;
+}*/
+/******************************************/
+/* END PAGINATE */
+/******************************************/
+
+/******************************************/
+/* FOOTER */
+/******************************************/
+.footer{
+	background: #f4f4f4;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	display: flex;
+	position: relative;
+}
+
+/******************************************/
+/* END FOOTER */
+/******************************************/
+

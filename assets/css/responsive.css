@@ -1,0 +1,81 @@
+.header-movil{
+    display: none;
+}
+.menu-sm{
+    display: none; 
+}
+@media (max-width: 609px){
+    /******************************************/
+    /* HEADER */
+    /******************************************/
+        .header{
+            display: none;
+        }
+        .header-movil{
+            height: 70px;
+	        background: rgb(78, 78, 78);
+            display: flex;
+            align-items: center;
+        }
+        .title-sm{
+            display: flex;
+            font-size: 12px;
+            justify-content: center;
+        }
+        .ico-menu{
+            display: flex;
+            justify-content: center;
+        }
+        .ico-menu button{
+            outline: none;
+            background: none;
+            border: none;
+            color: #fff;
+        }
+        .menu-sm{
+            width: 50%;
+            height: 370px;
+            /* display: flex; */
+            top: 0;
+            position: absolute;
+            z-index: 800;
+            background: rgb(78, 78, 78);
+            border: none !important;
+            border-radius: 0px !important;
+        }
+        .menu-sm > ul{
+            list-style: none;
+            padding: 0px;
+        }
+        .menu-sm > ul > li {
+            padding: 10px;
+        }
+        .menu-sm ul li a{
+            /* padding: 0px 10px;
+             */
+             width: 100%;
+            /* background: wheat; */
+            text-decoration: none;
+            color:white
+        }
+        .menu-sm > ul > li > ul{
+            list-style: disclosure-closed;
+        }
+        .menu-sm > ul > li > ul >li{
+            padding: 5px;
+        }
+    /******************************************/
+    /* END HEADER */
+    /******************************************/
+
+    /******************************************/
+    /* MENU DE NAVEGACION */
+    /******************************************/
+    .barra-navegacion{
+        display: none;
+    }
+    /******************************************/
+    /* END MENU DE NAVEGACION */
+    /******************************************/
+
+}
